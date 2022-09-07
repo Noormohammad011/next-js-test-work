@@ -1,18 +1,21 @@
 import React from 'react'
 import Button from '@mui/material/Button'
-const Sidebar = ({data, setSelectedCategory}) => {
+const Sidebar = ({ data, setSelectedCategory }) => {
+  const cData = [...new Set(data.map((c) => c.category))]
+
   return (
     <>
-      {data && data.map((x) => (
-        <Button
-          size='medium'
-          variant='outlined'
-          className='text-neutral-300 rounded-none border-gray-300 w-full my-2'
-          onClick={() => setSelectedCategory(x.category)}
-        >
-          {x.category}
-        </Button>
-      ))}
+      {cData &&
+        cData.map((x) => (
+          <Button
+            size='medium'
+            variant='outlined'
+            className='text-grey font-rubik rounded-none border border-[#D6D5D5] hover:border-[#D6D5D5] w-full my-2'
+            onClick={() => setSelectedCategory(x)}
+          >
+            {x}
+          </Button>
+        ))}
     </>
   )
 }

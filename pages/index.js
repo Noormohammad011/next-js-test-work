@@ -4,15 +4,19 @@ import { useState } from 'react'
 import Sidebar from '../components/Sidebar'
 export default function Home({ data }) {
   const [selectedCategory, setSelectedCategory] = useState('Lawyers')
-  const filtered = data.filter(x => x.category === selectedCategory)
+  const filtered = data.filter((x) => x.category === selectedCategory)
   return (
     <>
-      <div className='container flex'>
-        <div className='mx-4 sm:mx-4'>
+      <div className='font-rubik md:grid md:grid-cols-12 md:gap-[64px] mt-4 sm:mt-6 md:mt-6 mx-3 sm:mx-5 md:mx-6 md:mt-6 md:mx-10'>
+        <div className='col-span-3 lg:col-span-2'>
           <Sidebar data={data} setSelectedCategory={setSelectedCategory} />
         </div>
-        <div className='grid sm:grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-6 ml-16 sm:ml-4'>
-          <CardComponent data={filtered} />
+        <div className='col-span-9 lg:col-span-10'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-x-4 gap-y-4'>
+            {filtered.map((data) => (
+              <CardComponent data={data} />
+            ))}
+          </div>
         </div>
       </div>
     </>

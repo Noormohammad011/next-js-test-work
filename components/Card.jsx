@@ -6,55 +6,81 @@ import CardContent from '@mui/material/CardContent'
 import Avatar from '@mui/material/Avatar'
 import Typography from '@mui/material/Typography'
 import { red } from '@mui/material/colors'
-
+import PinDropOutlinedIcon from '@mui/icons-material/PinDropOutlined'
 
 export default function CardComponent({ data }) {
-  
   const [showMore, setShowMore] = React.useState(false)
+  const [text, setText] = React.useState('')
+
+  // 113
+  // base; 80
+  // <80 = 80 characters show
+  // >=80 = Show More button;
+  // ShowMore click = 113 characters
+  // ShowLess = 80 characters
+
+  const renderText = (p) => {
+    if (p.length >= 80 && !showMore) return p.substring(0, 80)
+    if (p.length < 80 && !showMore) return p
+    return p
+  }
+
   return (
     <>
-      {data &&
-        data?.map((x) => (
-          <Card key={x.id}>
-            <CardMedia
-              component='img'
-              height='146'
-              image={x.imageUrl}
-              alt='Paella dish'
+      <Card>
+        <CardMedia
+          component='img'
+          height='146'
+          image={data.imageUrl}
+          alt='Paella dish'
+        />
+        <CardHeader
+          avatar={
+            <img
+              className='w-8 h-8 rounded-full'
+              src={data.avatarImageUrl}
+              alt='Default avatar'
             />
-            <CardHeader
-              avatar={
-                <Avatar sx={{ bgcolor: red[500] }} aria-label='recipe'>
-                  <img
-                    className='w-10 h-10 rounded'
-                    src={x.avatarImageUrl}
-                    alt='Default avatar'
-                  />
-                </Avatar>
-              }
-              title={<h1>{x.name}</h1>}
-              subheader={
-                <div className='flex gap-x-4'>
-                  <h1 className='text-center'>{x.category}</h1>
-                  <h1 className='text-center'>{x.location}</h1>
-                </div>
-              }
-            />
-            <CardContent>
-              <Typography variant='body2' color='text.secondary'>
-                {showMore ? `${x.about}` : `${x.about.substring(0, 50)}`}
-                {x.about.substring(0, 50) && (
-                  <button
-                    className='text-blue-400'
-                    onClick={() => setShowMore(!showMore)}
-                  >
-                    {showMore ? 'Show less...' : 'Show more ...'}
-                  </button>
-                )}
-              </Typography>
-            </CardContent>
-          </Card>
-        ))}
+          }
+          title={
+            <div className='text-sm text-[#212121] font-semibold font-rubik -ml-2'>
+              {data.name}
+            </div>
+          }
+          subheader={
+            <div className='flex gap-x-1 text-xs font-rubik -ml-2'>
+              <div className='text-pink'>{data.category}</div>
+              <div>
+                <PinDropOutlinedIcon style={{ fontSize: '14px' }} />
+                <span className='text-grey'>{data.location}</span>
+              </div>
+            </div>
+          }
+        />
+        <div className='flex gap-x-3 px-4 pb-2 text-xs'>
+          <div>
+            <span className='text-pink'>{data.reviews}+</span>{' '}
+            <span className='text-grey'>Review</span>
+          </div>
+          <div>
+            <span className='text-pink'>${data.chargePerHour}</span>
+            <span className='text-grey'> Per Hour</span>
+          </div>
+        </div>
+        <CardContent className='m-0 py-0'>
+          <Typography variant='body2' className='font-rubik text-cBlack'>
+            {renderText(data.about)}
+            {data.about.length >= 80 && (
+              <button
+                className='text-pink pl-1'
+                onClick={() => setShowMore(!showMore)}
+              >
+                {showMore ? 'See Less' : 'See More'}
+              </button>
+            )}
+          </Typography>
+        </CardContent>
+      </Card>
     </>
   )
 }

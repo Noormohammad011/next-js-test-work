@@ -1,26 +1,59 @@
 {
-    "client":[
-      {
-        "id": "1",
-        "category": "Lawyers",
-        "imageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
-        "avatarImageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
-        "name": "John Smith",
-        "location": "North American",
-        "reviews": "100",
-        "chargePerHour": "10",
-        "about": "Noroldasflj haelfdl adsjlfasldf adflja;sdfa;sdasfadflklasfjlasf asdfkasdjlasfjdlf"
-      },
-      {
-        "id": "2",
-        "category": "good",
-        "imageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
-        "avatarImageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
-        "name": "John Smith",
-        "location": "North American",
-        "reviews": "100",
-        "chargePerHour": "10",
-        "about": "Noroldasflj haelfdl adsjlfasldf adflja;sdfa;sdasfadflklasfjlasf asdfkasdjlasfjdlf"
-      }
-    ]
+  "client": [
+    {
+      "id": "1",
+      "category": "Lawyers",
+      "imageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "avatarImageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "name": "John Smith",
+      "location": "North American",
+      "reviews": "100",
+      "chargePerHour": "10",
+      "about": "We are a group of committed professionals with a combined experience of 20 years in professional law and justice."
+    },
+    {
+      "id": "2",
+      "category": "good",
+      "imageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "avatarImageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "name": "Jacky Kelly",
+      "location": "North American",
+      "reviews": "100",
+      "chargePerHour": "10",
+      "about": "We are a group of committed professionals with a combined experience of 20 years in professional law and justice."
+    },
+    {
+      "id": "3",
+      "category": "good",
+      "imageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "avatarImageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "name": "John Smith",
+      "location": "North American",
+      "reviews": "100",
+      "chargePerHour": "10",
+      "about": "We are a group of committed professionals with a combined experience of 20 years in professional law and justice."
+    },
+    {
+      "id": "4",
+      "category": "good",
+      "imageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "avatarImageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "name": "John Smith",
+      "location": "North American",
+      "reviews": "100",
+      "chargePerHour": "10",
+      "about": "We are a group of committed professionals with a combined experience of 20 years in professional law and justice."
+    },
+    {
+      "id": "5",
+      "category": "good",
+      "imageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "avatarImageUrl": "https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "name": "John Smith",
+      "location": "North American",
+      "reviews": "100",
+      "chargePerHour": "10",
+      "about": "We are a group of committed prof with a"
+    }
+  ]
 }
