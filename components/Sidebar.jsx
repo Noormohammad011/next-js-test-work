@@ -8,6 +8,7 @@ const Sidebar = ({ data, setSelectedCategory }) => {
       {cData &&
         cData.map((x) => (
           <Button
+            key={x}
             size='medium'
             variant='outlined'
             className='text-grey font-rubik rounded-none border border-[#D6D5D5] hover:border-[#D6D5D5] w-full my-2'

@@ -14,7 +14,9 @@ export default function Home({ data }) {
         <div className='col-span-9 lg:col-span-10'>
           <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-x-4 gap-y-4'>
             {filtered.map((data) => (
-              <CardComponent data={data} />
+              <div key={data.id}>
+                <CardComponent data={data} />
+              </div>
             ))}
           </div>
         </div>
